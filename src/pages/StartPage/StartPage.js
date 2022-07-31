@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Assets/StartPage/diya-logo-without-title.png";
+import logo from "../../assets/StartPage/diya-logo-without-title.png";
 
 const StartPage = () => {
   return (
