@@ -4,10 +4,12 @@ import "./App.css";
 import StartPage from "./pages/StartPage/StartPage";
 
 
+
 function App() {
   return <div>
 
-<StartPage></StartPage>
+{/* <StartPage></StartPage> */}
+
 
 
   </div>;
