@@ -4,6 +4,7 @@ import "./App.css";
 import StartPage from "./pages/StartPage/StartPage";
 import SafetyPage from "./pages/SafetyPage/SafetyPage";
 import LanguagePage from "./pages/LanguagePage/LanguagePage";
+import IntroductionSlides from "./pages/IntroductionSlides/IntroductionSlides";
 
 
 
@@ -12,7 +13,7 @@ function App() {
 
     {/* <StartPage></StartPage> */}
     {/* <SafetyPage></SafetyPage> */}
-    <LanguagePage></LanguagePage>
+    <IntroductionSlides></IntroductionSlides>
 
 
 
