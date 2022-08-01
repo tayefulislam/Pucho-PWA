@@ -3,15 +3,17 @@ import logo from "./logo.svg";
 import "./App.css";
 import StartPage from "./pages/StartPage/StartPage";
 import SafetyPage from "./pages/SafetyPage/SafetyPage";
-import Test from "./pages/Test/Test2";
+import LanguagePage from "./pages/LanguagePage/LanguagePage";
+
 
 
 function App() {
   return <div>
 
-{/* <StartPage></StartPage> */}
+    {/* <StartPage></StartPage> */}
     {/* <SafetyPage></SafetyPage> */}
-    <Test></Test>
+    <LanguagePage></LanguagePage>
+
 
 
   </div>;
