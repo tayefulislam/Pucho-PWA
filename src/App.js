@@ -6,6 +6,7 @@ import SafetyPage from "./pages/SafetyPage/SafetyPage";
 import LanguagePage from "./pages/LanguagePage/LanguagePage";
 import IntroductionSlides from "./pages/IntroductionSlides/IntroductionSlides";
 import CovidStatus from "./pages/CovidStatus/CovidStatus";
+import CovidSymptoms from "./pages/CovidSymptoms/CovidSymptoms.js";
 
 
 
@@ -15,7 +16,8 @@ function App() {
     {/* <StartPage></StartPage> */}
     {/* <SafetyPage></SafetyPage> */}
     {/* <IntroductionSlides></IntroductionSlides> */}
-    <CovidStatus></CovidStatus>
+    {/* <CovidStatus></CovidStatus> */}
+    {<CovidSymptoms></CovidSymptoms>}
 
 
 
