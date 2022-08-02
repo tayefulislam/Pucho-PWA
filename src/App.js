@@ -8,6 +8,7 @@ import IntroductionSlides from "./pages/IntroductionSlides/IntroductionSlides";
 import CovidStatus from "./pages/CovidStatus/CovidStatus";
 import CovidSymptoms from "./pages/CovidSymptoms/CovidSymptoms.js";
 import HealthConditions from "./pages/HealthConditions/HealthConditions";
+import LastStep from "./pages/LastStep/LastStep.js";
 
 
 
@@ -19,7 +20,8 @@ function App() {
     {/* <IntroductionSlides></IntroductionSlides> */}
     {/* <CovidStatus></CovidStatus> */}
     {/* {<CovidSymptoms></CovidSymptoms>} */}
-    <HealthConditions></HealthConditions>
+    {/* <HealthConditions></HealthConditions> */}
+    <LastStep></LastStep>
 
 
 
