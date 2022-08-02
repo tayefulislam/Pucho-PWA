@@ -9,6 +9,7 @@ import CovidStatus from "./pages/CovidStatus/CovidStatus";
 import CovidSymptoms from "./pages/CovidSymptoms/CovidSymptoms.js";
 import HealthConditions from "./pages/HealthConditions/HealthConditions";
 import LastStep from "./pages/LastStep/LastStep.js";
+import CountPage from "./pages/CountPage/CountPage";
 
 
 
@@ -21,7 +22,8 @@ function App() {
     {/* <CovidStatus></CovidStatus> */}
     {/* {<CovidSymptoms></CovidSymptoms>} */}
     {/* <HealthConditions></HealthConditions> */}
-    <LastStep></LastStep>
+    {/* <LastStep></LastStep> */}
+    <CountPage></CountPage>
 
 
 
