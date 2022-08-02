@@ -7,6 +7,7 @@ import LanguagePage from "./pages/LanguagePage/LanguagePage";
 import IntroductionSlides from "./pages/IntroductionSlides/IntroductionSlides";
 import CovidStatus from "./pages/CovidStatus/CovidStatus";
 import CovidSymptoms from "./pages/CovidSymptoms/CovidSymptoms.js";
+import HealthConditions from "./pages/HealthConditions/HealthConditions";
 
 
 
@@ -17,7 +18,8 @@ function App() {
     {/* <SafetyPage></SafetyPage> */}
     {/* <IntroductionSlides></IntroductionSlides> */}
     {/* <CovidStatus></CovidStatus> */}
-    {<CovidSymptoms></CovidSymptoms>}
+    {/* {<CovidSymptoms></CovidSymptoms>} */}
+    <HealthConditions></HealthConditions>
 
 
 
