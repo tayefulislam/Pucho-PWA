@@ -1,6 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
+import Congratulations from "./pages/Congratulations/Congratulations";
 import Thankyou from "./pages/Thankyou/Thankyou";
 // import StartPage from "./pages/StartPage/StartPage";
 // import SafetyPage from "./pages/SafetyPage/SafetyPage";
@@ -30,7 +31,8 @@ function App() {
     {/* <QuietPlace></QuietPlace> */}
     {/* <SingTheVowel></SingTheVowel> */}
     {/* <LanguagePage></LanguagePage> */}
-    <Thankyou></Thankyou>
+    {/* <Thankyou></Thankyou> */}
+    <Congratulations></Congratulations>
 
 
 
