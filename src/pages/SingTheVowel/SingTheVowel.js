@@ -1,4 +1,6 @@
 import React from 'react';
+import ArrowButton from '../../components/ArrowButton/ArrowButton';
+import RedoButton from '../../components/RedoButton/RedoButton';
 import YellowButton from '../../components/YellowButton/YellowButton';
 
 
@@ -20,7 +22,18 @@ const SingTheVowel = () => {
 
                 </div>
 
-                <YellowButton className='w-[250px] my-10'>00:00</YellowButton>
+                <YellowButton className='w-[250px] my-5'>00:00</YellowButton>
+
+                {/* Redo System */}
+
+                <div className='grid grid-cols-2 max-w-[280px] mt-10'>
+
+                    <RedoButton>Redo</RedoButton>
+                    <ArrowButton className='text-lg'>Submit</ArrowButton>
+
+
+
+                </div>
             </div>
 
 

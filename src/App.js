@@ -28,6 +28,7 @@ function App() {
     {/* <CountPage></CountPage> */}
     {/* <QuietPlace></QuietPlace> */}
     <SingTheVowel></SingTheVowel>
+    {/* <LanguagePage></LanguagePage> */}
 
 
 
