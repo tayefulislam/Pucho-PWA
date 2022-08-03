@@ -11,6 +11,7 @@ import HealthConditions from "./pages/HealthConditions/HealthConditions";
 import LastStep from "./pages/LastStep/LastStep.js";
 import CountPage from "./pages/CountPage/CountPage";
 import QuietPlace from "./pages/QuietPlace/QuietPlace";
+import SingTheVowel from "./pages/SingTheVowel/SingTheVowel";
 
 
 
@@ -25,7 +26,8 @@ function App() {
     {/* <HealthConditions></HealthConditions> */}
     {/* <LastStep></LastStep> */}
     {/* <CountPage></CountPage> */}
-    <QuietPlace></QuietPlace>
+    {/* <QuietPlace></QuietPlace> */}
+    <SingTheVowel></SingTheVowel>
 
 
 
