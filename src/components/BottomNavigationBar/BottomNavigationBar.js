@@ -11,13 +11,13 @@ const BottomNavigationBar = () => {
 
 
     return (
-        <div>
+        <div className='relative'>
 
 
-            <div className='flex flex-col justify-center items-center mt-[230px]'>
+            <div className='flex flex-col justify-center items-center mt-[230px] '>
 
 
-                <div className='' style={{
+                <div className='z-40 mb-[-20px]' style={{
                     backgroundImage: `url(${Container})`,
                     backgroundRepeat: 'no-repeat',
                 }}>
@@ -30,9 +30,13 @@ const BottomNavigationBar = () => {
 
 
 
-                </div></div>
+                </div>
 
-            <div class="btm-nav bg-[#286F6B] text-white py-2  rounded-t-xl">
+            </div>
+
+
+
+            <div class="btm-nav bg-[#286F6B] text-white py-2 rounded-t-xl absolute ">
 
 
                 <button>

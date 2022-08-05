@@ -8,9 +8,9 @@ const Dashboard = () => {
 
 
     return (
-        <div >
+        <div className='m-0'>
 
-            <div>
+            <div >
 
                 <div className='flex justify-evenly'>
                     <h1 className='text-[33px] font-semibold'>Hello Aastha!</h1>
@@ -19,14 +19,14 @@ const Dashboard = () => {
                 </div>
 
 
-                <LongCovidMonitoring className='drop-shadow-xl'></LongCovidMonitoring>
+                <LongCovidMonitoring className='drop-shadow-xl '></LongCovidMonitoring>
 
 
             </div>
 
 
 
-            <BottomNavigationBar></BottomNavigationBar>
+            <BottomNavigationBar className='mt-10'></BottomNavigationBar>
         </div>
     );
 };
