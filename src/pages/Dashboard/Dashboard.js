@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dashboard.css';
 import BottomNavigationBar from '../../components/BottomNavigationBar/BottomNavigationBar';
 
 import languageIcon from '../../assets/icons/clarity_language-line.png';
@@ -19,7 +20,8 @@ const Dashboard = () => {
                 </div>
 
 
-                <LongCovidMonitoring className='drop-shadow-xl '></LongCovidMonitoring>
+                <LongCovidMonitoring></LongCovidMonitoring>
+
 
 
             </div>
