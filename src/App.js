@@ -1,7 +1,9 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
+import BottomNavigationBar from "./components/BottomNavigationBar/BottomNavigationBar";
 import Congratulations from "./pages/Congratulations/Congratulations";
+import Dashboard from "./pages/Dashboard/Dashboard.js";
 import Thankyou from "./pages/Thankyou/Thankyou";
 // import StartPage from "./pages/StartPage/StartPage";
 // import SafetyPage from "./pages/SafetyPage/SafetyPage";
@@ -32,7 +34,12 @@ function App() {
     {/* <SingTheVowel></SingTheVowel> */}
     {/* <LanguagePage></LanguagePage> */}
     {/* <Thankyou></Thankyou> */}
-    <Congratulations></Congratulations>
+    {/* <Congratulations></Congratulations> */}
+
+    {/* <BottomNavigationBar></BottomNavigationBar> */}
+    <Dashboard></Dashboard>
+
+
 
 
 
