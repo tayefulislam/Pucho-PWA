@@ -32,6 +32,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Demo></Demo>} ></Route>
 
+
+
       <Route path='startPage' element={<StartPage></StartPage>} ></Route>
       <Route path='safetyPage' element={<SafetyPage></SafetyPage>} ></Route>
       <Route path='introSlide' element={<IntroductionSlides />} ></Route>

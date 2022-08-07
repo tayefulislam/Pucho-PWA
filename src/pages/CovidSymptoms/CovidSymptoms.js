@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -10,10 +10,55 @@ import Avatar from '@mui/material/Avatar';
 import ArrowButton from '../../components/ArrowButton/ArrowButton';
 
 
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+
+
+import TextField from '@mui/material/TextField';
+
+
+// modal design 
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+
+    bgcolor: 'background.paper',
+    border: '0px solid #000',
+    boxShadow: 24,
+
+    p: 4,
+};
+
+
+
 
 const CovidSymptoms = () => {
 
+
+    // handle modal 
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClose = () => setOpen(false);
+
+    const handleOpen = () => setOpen(true);
+
+
+
+
     const [checked, setChecked] = React.useState([1]);
+
+    // console.log(checked[12])
+
+
+
 
     const handleToggle = (value) => () => {
         const currentIndex = checked.indexOf(value);
@@ -27,6 +72,9 @@ const CovidSymptoms = () => {
 
         setChecked(newChecked);
     };
+
+
+
 
 
     // all item are here may need to change id name for better unstande
@@ -44,7 +92,7 @@ const CovidSymptoms = () => {
         { id: 10, name: 'Difficulty breathing' },
         { id: 11, name: 'Fatigue' },
         { id: 12, name: 'Nausea or vomiting' },
-        { id: 13, name: 'Others' },
+
     ]
 
 
@@ -59,6 +107,7 @@ const CovidSymptoms = () => {
                     {items.map((value) => {
                         const labelId = `checkbox-list-secondary-label-${value.id}`;
                         return (
+
                             <ListItem className='bg-[#F1F7F7] mt-2 py-2 px-1 rounded-3xl'
                                 key={value.id}
                                 secondaryAction={
@@ -76,8 +125,25 @@ const CovidSymptoms = () => {
                                     <ListItemText id={labelId} primary={`${value.name}`} />
                                 </ListItemButton>
                             </ListItem>
+
                         );
                     })}
+
+                    <ListItem onClick={() => handleOpen()} className='bg-[#F1F7F7] mt-2 py-2 px-1 rounded-3xl'
+                        secondaryAction={
+                            <Checkbox
+                                edge="end"
+                            />
+                        }
+                        disablePadding
+                    >
+                        <ListItemButton>
+
+                            <ListItemText primary="Others" />
+                        </ListItemButton>
+                    </ListItem>
+
+
                 </List>
 
                 <ArrowButton className='my-3'>Next</ArrowButton>
@@ -85,10 +151,50 @@ const CovidSymptoms = () => {
 
 
 
-
-
-
             </div>
+
+            <div>
+                {/* <Button onClick={handleOpen}>Open modal</Button> */}
+                <Modal
+                    aria-labelledby="transition-modal-title"
+                    aria-describedby="transition-modal-description"
+                    open={open}
+                    onClose={handleClose}
+                    closeAfterTransition
+                    BackdropComponent={Backdrop}
+                    BackdropProps={{
+                        timeout: 500,
+                    }}
+                >
+                    <Fade in={open}>
+                        <Box sx={style} className='rounded-xl max-w-[450px] m-1'>
+                            <Typography id="transition-modal-title" variant="h6" component="h2">
+                                Others
+                            </Typography>
+                            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                                Specify the other health condition you have
+                            </Typography>
+
+                            <div className='flex justify-center items-center border-[#286F6B] border-solid border-2 py-2 rounded-sm'>
+                                <input type="text" placeholder="Health Condition" class="input w-full max-w-[200px] font-semibold " />
+                                <button className='text-[30px] bg-[#286F6B] py-1 px-3 ml-2 rounded-lg text-white'>+</button>
+
+                            </div>
+
+
+
+
+
+
+                            <ArrowButton className='w-full mt-2'>Submit</ArrowButton>
+
+
+
+                        </Box>
+                    </Fade>
+                </Modal>
+            </div>
+
 
 
         </div>
