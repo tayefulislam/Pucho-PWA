@@ -1,22 +1,17 @@
-import React, { useEffect } from 'react';
-
+import React from 'react';
+import ArrowButton from '../../components/ArrowButton/ArrowButton';
+import CrossIcon from '../../assets/icons/cross-icon.png'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Checkbox from '@mui/material/Checkbox';
-import Avatar from '@mui/material/Avatar';
-import ArrowButton from '../../components/ArrowButton/ArrowButton';
-
-
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
 
 import TextField from '@mui/material/TextField';
 
@@ -28,11 +23,9 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-
     bgcolor: 'background.paper',
     border: '0px solid #000',
     boxShadow: 24,
-
     p: 4,
 };
 
@@ -178,6 +171,12 @@ const CovidSymptoms = () => {
                             <div className='flex justify-center items-center border-[#286F6B] border-solid border-2 py-2 rounded-sm'>
                                 <input type="text" placeholder="Health Condition" class="input w-full max-w-[200px] font-semibold " />
                                 <button className='text-[30px] bg-[#286F6B] py-1 px-3 ml-2 rounded-lg text-white'>+</button>
+
+                            </div>
+
+                            <div>
+
+                                <button className='bg-[#286F6B] flex flex-row justify-center items-center py-2 px-3 rounded-full text-white mt-2'>Arthiritis<img className='ml-2' src={CrossIcon} alt="" /></button>
 
                             </div>
 
