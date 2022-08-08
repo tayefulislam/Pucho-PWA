@@ -22,6 +22,7 @@ import CountPage from "./pages/CountPage/CountPage";
 import QuietPlace from "./pages/QuietPlace/QuietPlace";
 import SingTheVowel from "./pages/SingTheVowel/SingTheVowel";
 import Demo from "./pages/Demo/Demo";
+import TryCoughingThreeTimes from "./pages/TryCoughingThreeTimes/TryCoughingThreeTimes";
 
 
 
@@ -30,7 +31,8 @@ function App() {
 
 
     <Routes>
-      <Route path='/' element={<Demo></Demo>} ></Route>
+      {/* <Route path='/' element={<Demo></Demo>} ></Route> */}
+      <Route path='/' element={<TryCoughingThreeTimes></TryCoughingThreeTimes>} ></Route>
 
 
 
