@@ -2,6 +2,7 @@ import React from 'react';
 import './TryCoughingThreeTimes.module.css';
 import WomenPicture from '../../assets/TryCoughingThreeTimes/womensick.png';
 import YellowButton from '../../components/YellowButton/YellowButton';
+import VoiceWaiting from '../../assets/states/Voice_Animation.png';
 
 const TryCoughingThreeTimes = () => {
 
@@ -21,6 +22,8 @@ const TryCoughingThreeTimes = () => {
 
 
                 <div>
+
+                    <img className='bg-[#286F6B]' src={VoiceWaiting} alt="" />
 
 
                 </div>

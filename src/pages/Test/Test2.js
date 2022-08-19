@@ -3,7 +3,7 @@ import "./Test2.css";
 
 import WheelPicker from 'react-simple-wheel-picker';
 
-
+//  test
 const data = [
   {
       id: '1',
